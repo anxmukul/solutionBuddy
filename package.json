@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/anxmukul/solutionBuddy/issues"
   },
-  "homepage": "https://github.com/anxmukul/solutionBuddy#readme"
+  "homepage": "https://github.com/anxmukul/solutionBuddy#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "pg": "^8.6.0"
+  }
 }
