@@ -41,12 +41,12 @@ app.post("/issue", (req, res) => {
   const email = req.body.email;
   const state = req.body.state;
   const district = req.body.district;
-  const discription = req.body.discription;
+  const description = req.body.description;
   const profession = req.body.contacto;
 //   console.log(firstname);
 //   console.log(lastname);
 	const insertquerry = `insert into problemstable(firstname, lastname, mobileno, email, state, district, description) 
-	values('${firstname}', '${lastname}', '${mobileno}', '${email}', '${state}', '${district}', '${discription}');`
+	values('${firstname}', '${lastname}', '${mobileno}', '${email}', '${state}', '${district}', '${description}');`
 	client.query(insertquerry, (err, res) => {
 		if(err){
 			console.log("Insertion in db failed", err);
