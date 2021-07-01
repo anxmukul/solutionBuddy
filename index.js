@@ -26,19 +26,19 @@ function removeWhiteSpaceFromEnd(title) {
 }
 app.get("/", (req, res) => {
   // res.send('Welcome to solutionBuddy!');
-  res.render("root");
-  //   const selectallQuery = `select * from problemstable order by problemno desc`;
-  //   client.query(selectallQuery, (err, result) => {
-  //     if (err) {
-  //       console.log(err)
-  //       res.send("error");
-  //     } else {
-  // 		// console.log(result);
-  //       res.render("root", {
-  //         allblog: result.rows,
-  //       });
-  //     }
-  //   });
+//   res.render("root");
+    const selectallQuery = `select * from problemstable order by problemno desc`;
+    client.query(selectallQuery, (err, result) => {
+      if (err) {
+        console.log(err)
+        res.send("error");
+      } else {
+  		// console.log(result);
+        res.render("root", {
+          allissues: result.rows,
+        });
+      }
+    });
 });
 app.get("/postIssue", (req, res) => {
   res.sendFile("views/newissue.html", { root: __dirname });
