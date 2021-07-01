@@ -1,0 +1,19 @@
+{
+  "name": "solutionbuddy",
+  "version": "1.0.0",
+  "description": "One place to solve your problem",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anxmukul/solutionBuddy.git"
+  },
+  "author": "Mukul",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anxmukul/solutionBuddy/issues"
+  },
+  "homepage": "https://github.com/anxmukul/solutionBuddy#readme"
+}
