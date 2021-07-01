@@ -4,9 +4,7 @@
   "description": "One place to solve your problem",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
     "start": "nodemon index.js"
-    
   },
   "repository": {
     "type": "git",
@@ -19,6 +17,7 @@
   },
   "homepage": "https://github.com/anxmukul/solutionBuddy#readme",
   "dependencies": {
+    "ejs": "^3.1.6",
     "express": "^4.17.1",
     "pg": "^8.6.0"
   }
