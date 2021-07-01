@@ -7,6 +7,9 @@ app.get("/", (req, res) =>{
 	// res.send('Welcome to solutionBuddy!');
 	res.render('root');
 })
+app.get('/postIssue', (req, res)=>{
+	res.render('newissue');
+})
 app.listen(port, () =>{
 	console.log(`Example app listening at http://localhost:${port}`);
 })
