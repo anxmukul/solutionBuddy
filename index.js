@@ -54,7 +54,7 @@ app.post("/issue", (req, res) => {
   const district = req.body.district;
   const description = req.body.description;
   const proffesion = req.body.contactto;
-  const insertquerry = `insert into problemstable(firstname, lastname, mobileno, email, state, district, description, proffesion) 
+  const insertquerry = `insert into problemstable(firstname, lastname, mobileno, email, state, district, description, profession) 
 	values('${firstname}', '${lastname}', '${mobileno}', '${email}', '${state}', '${district}', '${description}', '${proffesion}');`;
   client.query(insertquerry, (err, result) => {
     if (err) {
